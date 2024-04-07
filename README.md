@@ -24,11 +24,8 @@ yacs>=0.1.8
 ## Running
 Run main.py to train DSANIB and obtain the predicted scores for drug-target interactions.
 
-## Acknowledgements
-This experiment is partially inspired by the previous study [4]
-
 ### References
     [1] Liu, Tiqing, et al. "BindingDB: a web-accessible database of experimentally determined protein–ligand binding affinities." Nucleic acids research 35.suppl_1 (2007): D198-D201.
     [2] Huang, Kexin, et al. "MolTrans: molecular interaction transformer for drug–target interaction prediction." Bioinformatics 37.6 (2021): 830-836.
     [3] Chen, Lifan, et al. "TransformerCPI: improving compound–protein interaction prediction by sequence-based deep learning with self-attention mechanism and label reversal experiments." Bioinformatics 36.16 (2020): 4406-4414.
-    [4] Bai, Peizhen, et al. "Interpretable bilinear attention network with domain adaptation improves drug–target prediction." Nature Machine Intelligence 5.2 (2023): 126-136.
+
