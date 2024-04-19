@@ -34,7 +34,7 @@ class Training(object):
         self.test_results = {}
         self.config = config
         self.output_dir = config["RESULT"]["PATH"]
-        test_metric_header = ["Results at Best Model", "AUC", "AUPR", "ACC", "Sensitivity", "Specificity"]
+        test_metric_header = ["Results at Best Model", "AUC", "AUPR", "Sensitivity", "Specificity", "ACC"]
         self.test_table = PrettyTable(test_metric_header)
 
     def train(self):
