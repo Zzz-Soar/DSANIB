@@ -15,7 +15,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 parser = argparse.ArgumentParser(description="DSANIB for DTI prediction")
 parser.add_argument('--cfg', default='configs/DSANIB.yaml', type=str)
-parser.add_argument('--data', default='human', type=str, metavar='TASK')
+parser.add_argument('--data', default='human', type=str, metavar='TASK', choices=['bindingdb', 'biosnap', 'human'])
 parser.add_argument('--split', default='random', type=str, metavar='S')
 args = parser.parse_args()
 
