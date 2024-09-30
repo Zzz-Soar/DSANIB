@@ -24,6 +24,14 @@ yacs>=0.1.8
 ## Running
 Run main.py to train DSANIB and obtain the predicted scores for drug-target interactions.
 
+Run DSANIB on Our Datasets
+To train DSANIB, where we provide the basic configurations for all hyperparameters in `config.py`. 
+
+You can directly run the following command. `${dataset}` could either be `bindingdb`, `biosnap` and `human`. `${split_task}` could be `random`. 
+```
+$ python main.py --cfg "configs/DSANIB.yaml" --data ${dataset} --split ${split_task}
+```
+
 ### References
     [1] Liu, Tiqing, et al. "BindingDB: a web-accessible database of experimentally determined protein–ligand binding affinities." Nucleic acids research 35.suppl_1 (2007): D198-D201.
     [2] Huang, Kexin, et al. "MolTrans: molecular interaction transformer for drug–target interaction prediction." Bioinformatics 37.6 (2021): 830-836.
