@@ -3,6 +3,7 @@ import torch.nn.functional as F
 import torch
 from dgllife.model.gnn import GCN
 
+# calculate loss
 def loss_function(res_pre, labels, vec_mean, vec_cov, beta=1e-3):
     loss_fct = torch.nn.BCELoss()
     m = nn.Sigmoid()
