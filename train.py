@@ -65,7 +65,8 @@ class Training(object):
         self.test_results["best_epoch"] = self.val_best_epoch
         self.save_result()
         return self.test_results
-
+        
+# save result
     def save_result(self):
         test_prettytable_file = os.path.join(self.output_dir, "test_record.txt")
         with open(test_prettytable_file, 'w') as fp:
