@@ -22,7 +22,7 @@ rdkit>=2021.03.2
 yacs>=0.1.8
 ```
 ## Running
-Run main.py to train DSANIB and obtain the predicted scores for drug-target interactions.
+Run main.py to train DSANIB and obtain the predicted scores for DTIs.
 
 Run DSANIB on Our Datasets
 To train DSANIB, where we provide the basic configurations for all hyperparameters in `config.py`. 
