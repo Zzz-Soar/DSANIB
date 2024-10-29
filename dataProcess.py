@@ -4,7 +4,7 @@ from functools import partial
 from dgllife.utils import smiles_to_bigraph, CanonicalAtomFeaturizer, CanonicalBondFeaturizer
 from utils import proteinMap, drugMap
 
-
+# the data process for DSANIB 
 class DTIDataset(data.Dataset):
     def __init__(self, list_IDs, df):
         self.list_IDs = list_IDs
