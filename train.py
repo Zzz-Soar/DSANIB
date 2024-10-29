@@ -31,11 +31,11 @@ class Training(object):
         self.train_loss_epoch = []
         self.train_model_loss_epoch = []
         self.val_loss_epoch, self.val_auroc_epoch = [], []
-        self.test_results = {}
         self.config = config
         self.output_dir = config["RESULT"]["PATH"]
         test_metric_header = ["Results at Best Model", "AUC", "AUPR", "Sensitivity", "Specificity", "ACC"]
         self.test_table = PrettyTable(test_metric_header)
+        self.test_results = {}
 
     def train(self):
         float2str = lambda x: '%0.4f' % x
