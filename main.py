@@ -42,8 +42,7 @@ def main():
     val_dataset = DTIDataset(df_val.index.values, df_val)
     test_dataset = DTIDataset(df_test.index.values, df_test)
 
-    params = {'batch_size': cfg.SETUP.BATCH_SIZE, 'shuffle': True, 'num_workers': cfg.SETUP.NUM_WORKERS,
-              'drop_last': True, 'collate_fn': graph_collate_func}
+    params = {'batch_size': cfg.SETUP.BATCH_SIZE, 'shuffle': True, 'num_workers': cfg.SETUP.NUM_WORKERS, 'drop_last': True, 'collate_fn': graph_collate_func}
 
     train_data = DataLoader(train_dataset, **params)
     params['shuffle'] = False
